@@ -7,22 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Bootstrap Basic Portfolio</title>
-
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
   </head>
 
   <body>
 
-    <!-- Start of navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -33,44 +27,32 @@
           <a class="navbar-brand" href="#" id="logo">Marina Hyers</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right navbar-right-custom">
             <li><a href="contact.html">Contact</a></li><span class="pipe"></span>
             <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
             <li><a href="index.html">About</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
-    <!-- End of navbar -->
 
-    <!-- Start of content wrap -->
-    <div class="wrap">
-      <div class="container">
-        <section class="row">
-          <div class="col-md-8">
-            <form class="contact-form">
-              <h1 class="contact-form-header">Contact</h1>
-              <hr class="contact-hr"/>
-              <div class="form-group">
-                <label class="label-name" for="name">Name</label>
-                <input type="text" id="name_input" name="user_name" />
-              </div>
-              <div class="form-group">
-                <label class="label-mail" for="mail">E-mail</label>
-                <input type="email" id="mail_input" name="user_mail" />
-              </div>
-              <div class="form-group">
-                <label class="label-msg" for="msg">Message</label><br />
-                <textarea id="msg" name="user_message_input" cols=600></textarea>
-              </div>
-              <button class="submit-btn">Submit</button>
-            </form>
-          </div>
-          <div class="col-md-4">
+    <div class="container">
+  		<div class="mainSection">
+        <div id="contactform"
+  			<h2 class="sectionTitle">Contact</h2>
+  			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+  				Name<br>
+  				<input type="text" name="name" placeholder="John Smith" class="textEntry"><br>
+  				E-mail<br>
+  				<input type="text" name="mail" placeholder="example@gmail.com" class="textEntry"><br>
+  				Message<br>
+  				<textarea name="Text1" cols="95" rows="5" id="messageEntry"></textarea><br>
+  				<input type="submit" value="Submit" id="submit">
+  			</form>
+      </div>
+  		</div>
 
-            <!-- Start of Connect With Me Area -->
             <section id="connect-with-me-area">
               <div class="connect-with-me-content">
                 <h1 class="connect-with-me-header">Connect With Me</h1>
@@ -82,28 +64,21 @@
                 </div>
               </div>
             </section>
-
-            <!-- End of the Connect With Me Area -->
           </div>
         </section>
       </div>
     </div>
-    <!-- End of content wrap -->
 
-    <!-- Start of footer -->
     <footer class="footer">
       <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
         &copy; Copyright 2017 Marina Hyers
       </p>
     </footer>
-    <!-- End of footer -->
 
-    <!-- jQuery CDN -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
   </body>
 

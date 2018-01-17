@@ -17,6 +17,27 @@ html {
   background-color: #dbb261;
 }
 
+.mainSection {
+	margin-left: 40px;
+	margin-top: 40px;
+  margin-right: 50px;
+	width: 900px;
+	min-height: 375px;
+	border: 1px solid #ddd;
+	padding: 10px 30px 30px 30px;
+	background: #fff;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+	margin-bottom: 150px;
+	line-height: 200%;
+
+}
+
+
+#contactform {
+  padding-left: 100px;
+}
+
 #logo {
   height: 60px;
   padding-top: 20px;
@@ -30,6 +51,14 @@ html {
   color: #fff;
 
   background: #dbb261;
+}
+
+.portImgs {
+	width: 250px;
+	height: 70px;
+	padding-top: 100px;
+	display: inline-block;
+	margin: 20px;
 }
 
 .navbar-right-custom {
@@ -69,7 +98,7 @@ html {
 #me-image {
   float: left;
   width: 200px;
-  height: 200px;
+  height: 150px;
   margin-top: 20px;
   margin-right: 20px;
 }
