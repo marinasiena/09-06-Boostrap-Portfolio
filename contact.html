@@ -18,13 +18,15 @@
       <div class="container-fluid navbar-custom">
 
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" id="nav-btn" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" id="logo">Marina Hyers</a>
+          <div class="col-xs-8 col-sm-12">
+            <a class="navbar-brand" href="#" id="logo">Marina Hyers</a>
+          </div>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,35 +40,45 @@
     </nav>
 
     <div class="container">
-  		<div class="mainSection">
-        <div id="contactform"
-  			<h2 class="sectionTitle">Contact</h2>
-  			<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-  				Name<br>
-  				<input type="text" name="name" placeholder="John Smith" class="textEntry"><br>
-  				E-mail<br>
-  				<input type="text" name="mail" placeholder="example@gmail.com" class="textEntry"><br>
-  				Message<br>
-  				<textarea name="Text1" cols="95" rows="5" id="messageEntry"></textarea><br>
-  				<input type="submit" value="Submit" id="submit">
-  			</form>
-      </div>
-  		</div>
+      <section class='row'>
 
-            <section id="connect-with-me-area">
-              <div class="connect-with-me-content">
-                <h1 class="connect-with-me-header">Connect With Me</h1>
-                <hr />
-                <div id="images">
-                  <img src="assets/imgs/github.png" alt="" class="connect-with-me-photo">
-                  <img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo">
-                  <img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo">
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-      </div>
+        <div class="col-md-8">
+          <section id="contact-form" >
+  			     <h1 class="port-header">Contact</h1>
+  			     <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+               <div class="row space-after">
+    				         <label class="col-xs-3">Name</label>
+                     <input class="col-xs-5" type="text" name="name" placeholder="John Smith" class="textEntry" />
+               </div>
+               <div class="row space-after">
+                 <label class="col-xs-3">E-mail</label>
+    				     <input class="col-xs-5" type="text" name="mail" placeholder="example@gmail.com" class="textEntry" />
+    			     </div>
+               <div class="row space-after">
+                 <label class='col-xs-3'>Message</label>
+    				     <textarea class='col-xs-7' rows='5' name="Text1" id="messageEntry"></textarea>
+               </div>
+               <div class="row">
+    				     <input type="submit" value="Submit" id="submit">
+               </div>
+  		       </form>
+         </section>
+         </div>
+
+         <div class="col-md-4">
+           <section id="connect-with-me-area">
+             <div class="connect-with-me-content">
+               <h1 class="connect-with-me-header">Find me on ...</h1>
+               <hr />
+               <div id="images">
+                 <img src="assets/imgs/github.png" alt="" class="connect-with-me-photo">
+                 <img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo">
+                 <img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo">
+               </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
 
     <footer class="footer">

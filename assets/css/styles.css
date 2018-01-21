@@ -1,15 +1,11 @@
 body {
   margin-bottom: 150px;
-
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
   background-image: url("../imgs/woodbg.jpg");
 }
 
 html {
-
   position: relative;
-
   min-height: 100%;
 }
 
@@ -18,10 +14,7 @@ html {
 }
 
 .mainSection {
-	margin-left: 40px;
 	margin-top: 40px;
-  margin-right: 50px;
-	width: 900px;
 	min-height: 375px;
 	border: 1px solid #ddd;
 	padding: 10px 30px 30px 30px;
@@ -33,24 +26,23 @@ html {
 
 }
 
-
-#contactform {
-  padding-left: 100px;
+#contactform > label {
+  display: block;
+}
+.space-after {
+  padding-bottom: 10px;
+}
+#messageEntry {
+  width: 90%;
 }
 
 #logo {
-  height: 60px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-
-  margin-left: 70px;
   font-family: Georgia, Times, "Times New Roman", serif;
-
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-
   background: #dbb261;
+  text-align: center;
 }
 
 .portImgs {
@@ -62,15 +54,18 @@ html {
 }
 
 .navbar-right-custom {
-  padding-top: 6px;
-  padding-right: 20px;
-
   font-family: Arial;
   font-weight: lighter;
 }
 
 .navbar-nav > li > a:hover {
   color: #dbb261;
+}
+#nav-btn {
+  margin: 20px;
+}
+label {
+  font-weight: normal;
 }
 
 .about-me-header {
@@ -84,8 +79,9 @@ html {
 .about-me-content {
   width: 100%;
   padding: 30px;
-  margin-top: 32px;
+  margin-top: 30px;
   background-color: #fff;
+  padding: 45px 10px 25px 31px;
 }
 
 .about-me-content > p {
@@ -149,14 +145,13 @@ html {
   background-color: #4aaaa5;
 }
 
-.contact-form {
+#contact-form {
   width: 100%;
   padding: 45px 10px 25px 31px;
   margin-top: 30px;
   background-color: #fff;
 }
 
-.contact-form-header,
 .port-header {
   margin-bottom: 33px;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -200,10 +195,8 @@ html {
 }
 
 #portfolio-area {
-  width: 85%;
   padding: 45px 10px 25px 31px;
   margin-top: 30px;
-  margin-bottom: 200px;
   background-color: #fff;
 }
 
@@ -219,21 +212,10 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar-header {
-    background-color: #4aaaa5;
-  }
 
   #logo {
+    margin-top: 20px;
     width: 100%;
     height: 60px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    background: #4aaaa5;
   }
 }
